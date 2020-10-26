@@ -9,6 +9,15 @@ import datetime
 
 pd.set_option('display.width', 200)
 
+def multiplication(x,y):
+    return x*y
+
+def addition(x,y):
+    return x+y
+
+def division(x,y):
+    return x/y
+
 
 def clean_data(data):
     """ clean data
