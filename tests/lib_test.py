@@ -5,9 +5,17 @@ import os
 import build_your_toolbox
 import pandas as pd
 # Import from our lib
-from build_your_toolbox.lib import clean_data
+from build_your_toolbox.lib import *
 import pytest
 
+def test_multiplication():
+    assert multiplication(2,4) == 8
+
+def test_division():
+    assert division(8,2) == 4
+
+def test_addition():
+    assert addition(2,4) == 6
 
 def test_clean_data():
     datapath = os.path.dirname(os.path.abspath(build_your_toolbox.__file__)) + '/data'
